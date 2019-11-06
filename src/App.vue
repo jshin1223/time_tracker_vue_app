@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+   
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg navbar-default navbar-custom navbar-light">
         <div class="container">
@@ -15,13 +16,15 @@
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item">
-                      <router-link class="nav-link" to="/activities.html">Activities</router-link>
+                      <router-link class="nav-link" to="/Activity">Activity</router-link>
                     </li>
+
                     <li class="nav-item">
-                      <router-link class="nav-link" to="/">Records</router-link>
+                      <router-link class="nav-link" to="/Record">Record</router-link>
                     </li>
+
                     <li class="nav-item">
-                      <router-link class="nav-link" to="/">Graphs</router-link>
+                      <router-link class="nav-link" to="/Graph">Graph</router-link>
                     </li>
     
                 </ul>
@@ -43,6 +46,7 @@
         </div>
     </nav>
     <!-- End Navbar -->
+ 
 
     <router-view/>
 

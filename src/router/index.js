@@ -5,6 +5,9 @@ import About from "../views/About.vue";
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
+import Activity from "../views/Activity.vue"; 
+import Record from "../views/Record.vue"; 
+import Graph from "../views/Graph.vue"; 
 
 
 
@@ -15,7 +18,10 @@ const routes = [
     { path: "/about", name: "about", component: About },
     { path: "/signup", name: "signup", component: Signup },
     { path: "/login", name: "login", component: Login },
-    { path: "/logout", name: "logout", component: Logout }
+    { path: "/logout", name: "logout", component: Logout },
+    { path: "/activity", name: "activity", component: Activity },
+    { path: "/record", name: "record", component: Record },
+    { path: "/graph", name: "graph", component: Graph }
 
 ]
 
