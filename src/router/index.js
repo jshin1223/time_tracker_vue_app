@@ -5,7 +5,7 @@ import About from "../views/About.vue";
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
-import Activity from "../views/Activity.vue"; 
+import ActivitiesIndex from "../views/ActivitiesIndex.vue"; 
 import Record from "../views/Record.vue"; 
 import Graph from "../views/Graph.vue"; 
 
@@ -19,7 +19,7 @@ const routes = [
     { path: "/signup", name: "signup", component: Signup },
     { path: "/login", name: "login", component: Login },
     { path: "/logout", name: "logout", component: Logout },
-    { path: "/activity", name: "activity", component: Activity },
+    { path: "/activities", name: "activities-index", component: ActivitiesIndex },
     { path: "/record", name: "record", component: Record },
     { path: "/graph", name: "graph", component: Graph }
 

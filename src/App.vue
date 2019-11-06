@@ -4,7 +4,7 @@
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg navbar-default navbar-custom navbar-light">
         <div class="container">
-            <a class="navbar-brand logo" href="index.html">Time Blocking App</a>
+            <a class="navbar-brand logo" href="index.html">Time Tracker</a>
 
             <div class="navbar-header">
 
@@ -16,7 +16,7 @@
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item">
-                      <router-link class="nav-link" to="/Activity">Activity</router-link>
+                      <router-link class="nav-link" to="/Activities">Activities</router-link>
                     </li>
 
                     <li class="nav-item">
@@ -101,4 +101,12 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+
+body {
+  
+  background-image: url('/images/background/weather.png');
+}
+
 </style>
+
