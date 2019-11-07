@@ -1,26 +1,25 @@
 <template>
   <div class="activities-index">
-
-    <div v-for="activity in activities">
-    
-      <router-link v-bind:to="'/activities/' + activity.id"> 
-        <img v-bind:src="activity.image_url" v-bind:alt="activity.name"> 
-      </router-link>
+    <div class="container">
+      <div class="row">
+        <div class="p-4 col-lg-2" v-bind:class="{'marker-on': activity.marker.id }" v-for="activity in activities" v-on:click="triggerMarker(activity)">
+            <img class="img-fluid" v-bind:src="activity.image_url" v-bind:alt="activity.name"> 
+          
+        <h2>{{ activity.name }}</h2>
       
-    <h2>{{ activity.name }}</h2>
-  
+        </div>
+      </div>
     </div>
-      <div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+
+    <div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a>
+    </div>
   </div>  
 </template> 
 
-
-    
-
 <style>
-  img {
-    width: 150px;
-  }
+.marker-on {
+  background-color: green;
+}
 </style>
 
 <script>
@@ -36,10 +35,18 @@ export default {
     axios 
       .get("/api/activities")
       .then(response => {
-        console.log(response.data)
         this.activities = response.data; 
       }); 
     },
-    methods: {}
+    methods: {
+      triggerMarker: function(activity) {
+        axios
+          .post("/api/activities/" + activity.id + "/markers")
+          .then(response => {
+            console.log(response.data);
+            activity.marker = response.data.marker;
+          });
+      }
+    }
 }; 
 </script>

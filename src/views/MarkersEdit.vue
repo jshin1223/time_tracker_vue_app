@@ -34,14 +34,14 @@ export default {
   data: function() {
     return {
       errors: [],
-      marker: {}
+      markers: {}
     };
   },
   created: function() {
     axios
-      .get("/api/markers/" + this.$route.params.id)
+      .get("/api/markers/")
       .then(response => {
-        this.marker = response.data;
+        this.markers = response.data;
       });
   },
   methods: {

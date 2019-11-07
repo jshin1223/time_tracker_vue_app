@@ -20,7 +20,7 @@
                     </li>
 
                     <li class="nav-item">
-                      <router-link class="nav-link" to="/Record">Record</router-link>
+                      <router-link class="nav-link" to="/Markers">Record</router-link>
                     </li>
 
                     <li class="nav-item">
@@ -59,13 +59,7 @@
               <div class="text-center">
                 <div class="logo center-block"><img src="images/logo.png" alt="" class=""></div>
 
-                <ul class="list-inline social-circle margin-t-30">
-                  <li class="list-inline-item"><a href=""> <i class="mdi mdi-facebook"></i> </a></li>
-                  <li class="list-inline-item"><a href=""> <i class="mdi mdi-twitter"></i> </a></li>
-                  <li class="list-inline-item"><a href=""> <i class="mdi mdi-google-plus"></i> </a></li>
-                  <li class="list-inline-item"><a href=""> <i class="mdi mdi-apple"></i> </a></li>
-                  <li class="list-inline-item"><a href=""> <i class="mdi mdi-instagram"></i> </a></li>
-                </ul>
+
 
                 <p class="text-muted m-b-0 copyright-txt"> © Eagle 2017 - 2019 Zoyothemes</p>
 
@@ -81,26 +75,7 @@
 </template>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 
 
 body {
