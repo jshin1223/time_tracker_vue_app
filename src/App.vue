@@ -20,7 +20,7 @@
                     </li>
 
                     <li class="nav-item">
-                      <router-link class="nav-link" to="/Markers">Record</router-link>
+                      <router-link class="nav-link" to="/Users">Record</router-link>
                     </li>
 
                     <li class="nav-item">

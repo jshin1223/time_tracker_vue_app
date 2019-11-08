@@ -7,6 +7,7 @@ import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
 import ActivitiesIndex from "../views/ActivitiesIndex.vue"; 
 import MarkersIndex from "../views/MarkersIndex.vue";
+import UsersIndex from "../views/UsersIndex.vue"; 
 import Record from "../views/Record.vue"; 
 import Graph from "../views/Graph.vue";
 import Stopwatch from "../views/Stopwatch.vue";  
@@ -22,6 +23,7 @@ const routes = [
     { path: "/logout", name: "logout", component: Logout },
     { path: "/activities", name: "activities-index", component: ActivitiesIndex },
     { path: "/markers", name: "markers-index", component: MarkersIndex }, 
+    { path: "/users", name: "users-index", component: UsersIndex}, 
     { path: "/record", name: "record", component: Record },
     { path: "/graph", name: "graph", component: Graph },
     { path: "/stopwatch", name: "stopwatch", component: Stopwatch }
