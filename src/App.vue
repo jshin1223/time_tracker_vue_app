@@ -16,15 +16,15 @@
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item">
-                      <router-link class="nav-link" to="/Activities">Activities</router-link>
+                      <router-link class="nav-link" to="/activities">Activities</router-link>
                     </li>
 
                     <li class="nav-item">
-                      <router-link class="nav-link" to="/Users">Record</router-link>
+                      <router-link class="nav-link" to="/results">Record</router-link>
                     </li>
 
                     <li class="nav-item">
-                      <router-link class="nav-link" to="/Graph">Graph</router-link>
+                      <router-link class="nav-link" to="/graph">Graph</router-link>
                     </li>
     
                 </ul>
@@ -54,14 +54,19 @@
     <footer class="footer">
         <div class="container">
 
+
+
           <div class="row">
             <div class="col-lg-12">
               <div class="text-center">
                 <div class="logo center-block"><img src="images/logo.png" alt="" class=""></div>
 
+                <div class="text-center">Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a>
+                </div>
 
+                  <p class="text-muted m-b-0 copyright-txt"> © Eagle 2017 - 2019 Zoyothemes</p>
 
-                <p class="text-muted m-b-0 copyright-txt"> © Eagle 2017 - 2019 Zoyothemes</p>
+             
 
               </div>
             </div>
