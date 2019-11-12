@@ -26,6 +26,11 @@
                     <li class="nav-item">
                       <router-link class="nav-link" to="/graph">Graph</router-link>
                     </li>
+
+
+                    <li class="nav-item">
+                      <router-link class="nav-link" to="/donut">Donut</router-link>
+                    </li>
     
                 </ul>
             </div>
@@ -47,6 +52,7 @@
     </nav>
     <!-- End Navbar -->
  
+   
 
     <router-view/>
 

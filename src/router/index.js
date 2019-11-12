@@ -11,6 +11,7 @@ import UsersIndex from "../views/UsersIndex.vue";
 import UsersShow from "../views/UsersShow.vue"; 
 import Record from "../views/Record.vue"; 
 import Graph from "../views/Graph.vue";
+import Donut from "../views/Donut.vue";
 import Stopwatch from "../views/Stopwatch.vue";  
 
 
@@ -28,6 +29,7 @@ const routes = [
     { path: "/results", name: "users-show", component: UsersShow }, 
     { path: "/record", name: "record", component: Record },
     { path: "/graph", name: "graph", component: Graph },
+    { path: "/donut", name: "donut", component: Donut },
     { path: "/stopwatch", name: "stopwatch", component: Stopwatch }
 
 ]
