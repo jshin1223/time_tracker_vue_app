@@ -2,10 +2,13 @@
   <div class="activities-index">
     <div class="container">
       <div class="row">
-        <div class="p-4 col-lg-2" v-bind:class="{'marker-on': activity.marker.id }" v-for="activity in activities" v-on:click="triggerMarker(activity)">
+        <div class="p-4 col-lg-2"  v-for="activity in activities" v-on:click="triggerMarker(activity)">
+          <div v-bind:class="{'marker-on': activity.marker.id }" class="button-div-fill">
+            
             <img class="img-fluid" v-bind:src="activity.image_url" v-bind:alt="activity.name"> 
           
-        <h2>{{ activity.name }}</h2>
+            <h4>{{ activity.name }}</h4>
+          </div>
       
         </div>
       </div>
@@ -18,6 +21,12 @@
 <style>
 .marker-on {
   background-color: green;
+}
+
+.button-div-fill {
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px black;
 }
 </style>
 
